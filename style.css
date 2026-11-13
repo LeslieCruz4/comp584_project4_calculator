@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 400px;
+}
+
+
+/* Calculator layout */
+.wrapper {
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator display */
+.calculator-screen {
+    background-color: #49344F;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    font-size: 48px;
+    overflow: hidden;
+}
+
+/* Calculator buttons */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Button styling */
+.calculator-buttons button {
+    height: 80px;
+    font-size: 30px;
+    background-color: #F8D7E8;
+    border: 1px solid #B89ACB;
+    cursor: pointer;
+}
+
+/* Lavender operator buttons */
+.calculator-buttons .operator {
+    background-color: #CDB4DB;
+    color: #49344F;
+}
+
+/* Wider buttons */
+.calculator-buttons .clear {
+    grid-column: span 2;
+}
+
+.calculator-buttons .zero {
+    grid-column: span 2;
+}
+
+/* Hover effect */
+.calculator-buttons button:hover {
+    filter: brightness(1.1);
+}
+
+/* Active effect */
+.calculator-buttons button:active {
+    filter: brightness(0.85);
+}
+
+body {
+    background-color: #FFF5FA;
+}
